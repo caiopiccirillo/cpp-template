@@ -3,10 +3,9 @@ project(cpp-template VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include(CTest)
-enable_testing()
-
 add_executable(cpp-template main.cpp)
+
+add_subdirectory(test)
 
 include(CPackConfig.cmake)
 include(CPack)
