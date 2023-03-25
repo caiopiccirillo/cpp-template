@@ -8,6 +8,5 @@ enable_testing()
 
 add_executable(cpp-template main.cpp)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPackConfig.cmake)
 include(CPack)
