@@ -22,6 +22,7 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
 				"cmake.copyCompileCommands" : "${workspaceFolder}/compile_commands.json",
+				"cmake.configureOnOpen": true,
 				"C_Cpp.intelliSenseEngine": "disabled",
 				"terminal.integrated.defaultProfile.linux": "zsh"
 			},
