@@ -23,12 +23,13 @@
 			"settings": { 
 				"cmake.copyCompileCommands" : "${workspaceFolder}/compile_commands.json",
 				"cmake.configureOnOpen": true,
+				"cmake.generator": "Ninja",
 				"C_Cpp.intelliSenseEngine": "disabled",
 				"terminal.integrated.defaultProfile.linux": "zsh"
 			},
 			"extensions": [
 				"llvm-vs-code-extensions.vscode-clangd",
-				"ms-vscode.cmake-tools",
+				"ms-vscode.cmake-tools", // Reference: https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md
 				"ms-vscode.cpptools"
 			],
 		}
