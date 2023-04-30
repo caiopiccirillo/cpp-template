@@ -3,7 +3,7 @@ project(cpp-template VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(cpp-template main.cpp)
+add_subdirectory(src)
 
 add_subdirectory(test)
 
