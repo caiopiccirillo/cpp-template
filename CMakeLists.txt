@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(src)
 
 add_subdirectory(test)
+include(CTest)
 
 include(CPackConfig.cmake)
 include(CPack)
