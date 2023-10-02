@@ -1,5 +1,7 @@
 enable_testing()
 
+add_subdirectory(lib)
+
 add_executable(
   hello_test
   hello_test.cpp
