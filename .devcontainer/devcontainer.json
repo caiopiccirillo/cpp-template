@@ -20,21 +20,25 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
-				"cmake.copyCompileCommands" : "${workspaceFolder}/compile_commands.json",
+			"settings": {
+				"C_Cpp.intelliSenseEngine": "disabled",
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
 				"cmake.configureOnOpen": true,
 				"cmake.generator": "Ninja",
-				"C_Cpp.intelliSenseEngine": "disabled",
-				"terminal.integrated.defaultProfile.linux": "zsh"
+				"cmake.configureSettings": {
+					"CMAKE_TOOLCHAIN_FILE": "/usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake"
+				}
 			},
 			"extensions": [
 				"llvm-vs-code-extensions.vscode-clangd",
 				"ms-vscode.cmake-tools", // Reference: https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md
-				"ms-vscode.cpptools"
-			],
+				"ms-vscode.cpptools",
+				"matepek.vscode-catch2-test-adapter",
+				"cschlosser.doxdocgen"
+			]
 		}
-	},
-
+	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

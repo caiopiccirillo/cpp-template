@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 ## Testing
 
-GTest 1.12.0 is available for testing.
+GTest is available for testing.
 
 ## Availability
 
